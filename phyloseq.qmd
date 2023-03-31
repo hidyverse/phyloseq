@@ -1,0 +1,52 @@
+---
+title: "Data Science Tapas"
+subtitle: "Metagenomics with `phyloseq` in `R`"
+author: "Heidi Steiner"
+date: "April 6, 2023"
+footer: "https://github.com/ua-data7/DS-Tapas/Workshops/Spring2023/2023-Apr-06"
+format:
+  revealjs:
+    theme: [default, assets/custom.scss]
+    logo: assets/dsi.png
+    auto-play-media: true
+---
+
+## On Today's Menu
+
+-   Prep workspace
+-   Discuss
+    -   Metagenomics
+    -   Phyloseq
+-   Hands-on
+    -   pull whole genome data
+
+    -   visualize microbiome
+
+## Prepare RStudio
+
+-   File \> New R script
+-   Install necessary packages
+
+<!-- -->
+
+```         
+devtools::install_github(c("twbattaglia/MicrobeDS", "joey711/phyloseq"))
+```
+
+## What is Metagenomics?
+
+## What is `phyloseq`?
+
+
+## Metagenomics in `phyloseq` via `MicrobeDS`
+
+## Let's Try! ▶️ {.center}
+
+-   Pull data from `MicrobeDS`
+-   Visualize 
+
+## Buen Provecho!
+
+-   [Provide Tapas Feedback](https://uarizona.co1.qualtrics.com/jfe/form/SV_dmxCZsorVVr5lA2)
+-   [Request a consulatation](https://uarizona.co1.qualtrics.com/jfe/form/SV_7V8weDrKwCMbXCK)
+-   Find more resources [?]
