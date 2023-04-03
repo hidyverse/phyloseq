@@ -11,42 +11,84 @@ format:
     auto-play-media: true
 ---
 
-## On Today's Menu
+# On Today's Menu
 
--   Prep workspace
--   Discuss
+-   Prep RStudio 🔨
+-   Discuss 💬
     -   Metagenomics
     -   Phyloseq
--   Hands-on
-    -   pull whole genome data
+-   Hands-on ▶️
+    -   Import whole genome data
 
-    -   visualize microbiome
+    -   Visualize microbiome
 
-## Prepare RStudio
+# Prep workspace 🔨
 
 -   File \> New R script
 -   Install necessary packages
 
-<!-- -->
+```{r}
+#| echo: true
+#| eval: false
 
-```         
-devtools::install_github(c("twbattaglia/MicrobeDS", "joey711/phyloseq"))
+
+devtools::install_github(
+  c("twbattaglia/MicrobeDS", "joey711/phyloseq"))
 ```
 
-## What is Metagenomics?
+# Discuss 💬
+
+## What is metagenomics?
+
+-   A metagenome is the genome of a community...metagenomics aims to survey a community of microbes...a microbiome
+-   There are microbes **everywhere**...Let's sequence them!
+-   Possible applications:
+    -   Human health, agriculture, sustainability, ecology, etc.
 
 ## What is `phyloseq`?
 
+::: columns
+::: {.column width="70%"}
+-   R package to import, store, analyze, and graphically display complex phylogenetic sequencing data
 
-## Metagenomics in `phyloseq` via `MicrobeDS`
+    -   ***clustered into Operational Taxonomic Units (OTUs)***
 
-## Let's Try! ▶️ {.center}
+-   Useful with associated sample data, phylogenetic tree, or taxonomic assignment of the OTUs
+
+-   Wrapper for other R packages: vegan, ade4, ape, picante, ggplot2, etc.
+:::
+
+::: {.column width="25%"}
+![](assets/images/logoPhyloseq.png){fig-alt="hex logo featuring phylogenetic tree and a magnifying glass appearing DNA base pairs" fig-align="right"}
+:::
+:::
+
+::: footer
+<https://joey711.github.io/phyloseq/index.html>
+:::
+
+## Metagenomics in `phyloseq`
+
+### ...via `MicrobeDS` {style="float: right;"}
+
+\
+\
+\
+An R package containing datasets provided by large-scale microbiome studies 🎉\
+
+Each dataset is formatted for use with `phyloseq` 🎉🎉
+
+::: footer
+<https://github.com/twbattaglia/MicrobeDS>
+:::
+
+# Let's Try! ▶️
 
 -   Pull data from `MicrobeDS`
--   Visualize 
+-   Visualize
 
-## Buen Provecho!
+# Buen Provecho!
 
 -   [Provide Tapas Feedback](https://uarizona.co1.qualtrics.com/jfe/form/SV_dmxCZsorVVr5lA2)
--   [Request a consulatation](https://uarizona.co1.qualtrics.com/jfe/form/SV_7V8weDrKwCMbXCK)
--   Find more resources [?]
+-   [Request a consultation](https://uarizona.co1.qualtrics.com/jfe/form/SV_7V8weDrKwCMbXCK)
+-   Learn more from this [book](https://kyclark.gitbooks.io/metagenomics/content/) with reproducible code for working examples (from UArizona!)
